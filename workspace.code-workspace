@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\Downloads\\Compressed\\Red_Hat_Display"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "onedon"
+    }
+}
