@@ -1,19 +1,26 @@
            body {
                box-sizing: border-box;
-               background-image: url("./images/\pattern-background-desktop.svg");
-               background-repeat: no-repeat;
-               font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
-               font-weight: 16px;
-               display: flex;
+               font-family: 'Red-Hat';
+               font-size: 1.3rem;
                align-items: center;
                justify-content: center;
-               background-image: cover;
+               background-image:url("images/pattern-background-desktop.svg") ;
+               background-repeat: no-repeat;
+               background-color: hsl(225, 100%, 94%);
+               background-size: contain;
+               
+
+           }
+
+           @font-face {
+            src: "Red_Hat_Display/RedHatDisplay-Medium.ttf";
+            font-family: 'Red-Hat';
+            font-size: large;
            }
            
            .Card {
                display: flex;
                justify-content: center;
-               align-items: center;
                align-content: center;
                border: 3px;
                width: 370px;
@@ -22,7 +29,22 @@
                margin-top: 7em;
                border-radius: 30px;
                box-shadow: 7px 7px 7px 7px hsl(224, 23%, 55%);
+               margin: 0 auto;
+               margin-top: 50px;
+               overflow: hidden;
+               transition: all 2s ease-out;
+
            }
+           section{
+            display: block;
+            width:300px ;
+            height:70px; 
+            text-align: left;
+            padding: 10px;
+            margin: 0 auto;
+
+           }
+
            
            .small_box {
                display: flex;
@@ -33,7 +55,8 @@
                border-radius: 15px;
                height: 85px;
                background-color: hsl(225, 100%, 98%);
-               margin-top: 20px;
+               margin-top: 16px;
+               margin-bottom: 10px;
            }
            
            .change_link {
@@ -75,7 +98,7 @@
            .order_summary {
                display: inline-flex;
                margin: 0px;
-               padding: 10px;
+               padding: 5px;
                align-content: center;
                margin-left: 10px;
            }
@@ -89,7 +112,7 @@
                border-bottom-right-radius: 30px;
                border-bottom-left-radius: 30px;
                padding-top: 10px;
-               height: 310px;
+               height: 350px;
                flex-basis: auto;
            }
            
@@ -103,14 +126,13 @@
                background-color: hsl(245, 75%, 52%);
                color: white;
                border: 0px;
-               font-weight: 700;
                box-shadow: 4px 4px 4px 4px hsl(224, 23%, 55%);
                text-decoration: none;
+               font-weight: 600;
+               font-size: 1.02rem;
            }
            
-           button,
-           .cancel_order,
-           .change_link {
+           button, .cancel_order, .change_link {
                display: inline-block;
                vertical-align: middle;
                -webkit-transform: perspective(1px) translateZ(0);
@@ -121,6 +143,9 @@
                -webkit-transition-property: transform;
                transition-property: transform;
                transition-timing-function: ease-in-out;
+               text-decoration: none;
+               font-family: inherit;
+               font-size: 1.2rem;
            }
            
            button,
@@ -133,7 +158,8 @@
            button:focus,
            button:active {
                -webkit-transform: scale(1.1);
-               transform: scale(1.1);
+               transform: scale(1.05);
+               font-family: inherit;
            }
            
            .cancel_order:hover,
@@ -157,6 +183,18 @@
            .cancel_order:active {
                -webkit-transform: scale(1.1);
                transform: scale(1.15);
+
+
+           }
+           #background{
+               width: 100vw;
+               height: 60vh;
+               background-color: lightblue;
+               position: absolute;
+               bottom: 0;
+               left: 0;
+
+                
            }
            /* I spent 6 hours on this because Im a novice
                         and cant actually explain what I did because the whole process was try and error so alert
